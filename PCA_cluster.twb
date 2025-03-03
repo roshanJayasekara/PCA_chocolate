@@ -1,0 +1,1002 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='candy_data_pca' inline='true' name='federated.0yvw9va1en12y913b2kus1xaf90o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='candy_data_pca' name='textscan.0ndsm9s0htv3rv11bx65e1r24mlk'>
+            <connection class='textscan' directory='C:/Users/Roshan/Projects/PCA' filename='candy_data_pca.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ndsm9s0htv3rv11bx65e1r24mlk' name='candy_data_pca.csv' table='[candy_data_pca#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='competitorname' ordinal='1' />
+            <column datatype='integer' name='chocolate' ordinal='2' />
+            <column datatype='integer' name='fruity' ordinal='3' />
+            <column datatype='integer' name='caramel' ordinal='4' />
+            <column datatype='integer' name='peanutyalmondy' ordinal='5' />
+            <column datatype='integer' name='nougat' ordinal='6' />
+            <column datatype='integer' name='crispedricewafer' ordinal='7' />
+            <column datatype='integer' name='hard' ordinal='8' />
+            <column datatype='integer' name='bar' ordinal='9' />
+            <column datatype='integer' name='pluribus' ordinal='10' />
+            <column datatype='real' name='sugarpercent' ordinal='11' />
+            <column datatype='real' name='pricepercent' ordinal='12' />
+            <column datatype='real' name='winpercent' ordinal='13' />
+            <column datatype='real' name='X_pca' ordinal='14' />
+            <column datatype='real' name='Y_pca' ordinal='15' />
+            <column datatype='real' name='x_jitter' ordinal='16' />
+            <column datatype='real' name='y_jitter' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>competitorname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[competitorname]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>competitorname</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chocolate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[chocolate]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>chocolate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fruity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fruity]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>fruity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>caramel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[caramel]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>caramel</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>peanutyalmondy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[peanutyalmondy]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>peanutyalmondy</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nougat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nougat]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>nougat</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crispedricewafer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[crispedricewafer]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>crispedricewafer</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hard]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>hard</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bar</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bar]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>bar</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pluribus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pluribus]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>pluribus</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sugarpercent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sugarpercent]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>sugarpercent</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pricepercent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pricepercent]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>pricepercent</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winpercent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[winpercent]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>winpercent</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X_pca</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[X_pca]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>X_pca</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y_pca</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Y_pca]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>Y_pca</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x_jitter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x_jitter]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>x_jitter</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y_jitter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y_jitter]</local-name>
+            <parent-name>[candy_data_pca.csv]</parent-name>
+            <remote-alias>y_jitter</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='X pca' datatype='real' name='[X_pca]' role='measure' type='quantitative' />
+      <column caption='Y pca' datatype='real' name='[Y_pca]' role='measure' type='quantitative' />
+      <column caption='candy_data_pca.csv' datatype='table' name='[__tableau_internal_object_id__].[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]' role='measure' type='quantitative' />
+      <column caption='Bar' datatype='integer' name='[bar]' role='measure' type='quantitative' />
+      <column caption='Caramel' datatype='integer' name='[caramel]' role='measure' type='quantitative' />
+      <column caption='Chocolate' datatype='integer' name='[chocolate]' role='measure' type='quantitative' />
+      <column caption='Competitorname' datatype='string' name='[competitorname]' role='dimension' type='nominal' />
+      <column caption='Crispedricewafer' datatype='integer' name='[crispedricewafer]' role='measure' type='quantitative' />
+      <column caption='Fruity' datatype='integer' name='[fruity]' role='measure' type='quantitative' />
+      <column caption='Hard' datatype='integer' name='[hard]' role='measure' type='quantitative' />
+      <column caption='Nougat' datatype='integer' name='[nougat]' role='measure' type='quantitative' />
+      <column caption='Peanutyalmondy' datatype='integer' name='[peanutyalmondy]' role='measure' type='quantitative' />
+      <column caption='Pluribus' datatype='integer' name='[pluribus]' role='measure' type='quantitative' />
+      <column caption='Pricepercent' datatype='real' name='[pricepercent]' role='measure' type='quantitative' />
+      <column caption='Sugarpercent' datatype='real' name='[sugarpercent]' role='measure' type='quantitative' />
+      <column caption='Winpercent' datatype='real' name='[winpercent]' role='measure' type='quantitative' />
+      <column datatype='real' name='[x_jitter]' role='measure' type='quantitative' />
+      <column datatype='real' name='[y_jitter]' role='measure' type='quantitative' />
+      <column-instance column='[x_jitter]' derivation='Sum' name='[sum:x_jitter:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[y_jitter]' derivation='Sum' name='[sum:y_jitter:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Roshan/AppData/Local/Temp/TableauTemp/#TableauTemp_12irvzr14oj1va14ncvxt1c8cfk6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/03/2025 07:38:29 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>competitorname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[competitorname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>competitorname</remote-alias>
+              <ordinal>1</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>chocolate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[chocolate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>chocolate</remote-alias>
+              <ordinal>2</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fruity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fruity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fruity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>caramel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[caramel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>caramel</remote-alias>
+              <ordinal>4</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>peanutyalmondy</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[peanutyalmondy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>peanutyalmondy</remote-alias>
+              <ordinal>5</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nougat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nougat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nougat</remote-alias>
+              <ordinal>6</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crispedricewafer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[crispedricewafer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>crispedricewafer</remote-alias>
+              <ordinal>7</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hard</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hard]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hard</remote-alias>
+              <ordinal>8</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bar</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bar]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bar</remote-alias>
+              <ordinal>9</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pluribus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pluribus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pluribus</remote-alias>
+              <ordinal>10</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sugarpercent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sugarpercent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sugarpercent</remote-alias>
+              <ordinal>11</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pricepercent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pricepercent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pricepercent</remote-alias>
+              <ordinal>12</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winpercent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[winpercent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>winpercent</remote-alias>
+              <ordinal>13</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X_pca</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[X_pca]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X_pca</remote-alias>
+              <ordinal>14</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Y_pca</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Y_pca]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Y_pca</remote-alias>
+              <ordinal>15</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x_jitter</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x_jitter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>x_jitter</remote-alias>
+              <ordinal>16</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y_jitter</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y_jitter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>y_jitter</remote-alias>
+              <ordinal>17</ordinal>
+              <family>candy_data_pca.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Sri Lanka&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{932ca0ab-9f48-48bb-ac0f-212d2e58b86f}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.0yvw9va1en12y913b2kus1xaf90o].[sum:x_jitter:qk]' />
+            <field name='[federated.0yvw9va1en12y913b2kus1xaf90o].[sum:y_jitter:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>4</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <object-graph>
+        <objects>
+          <object caption='candy_data_pca.csv' id='candy_data_pca.csv_33A017EF1DAF4B01BE2FA50E1E02EE20'>
+            <properties context=''>
+              <relation connection='textscan.0ndsm9s0htv3rv11bx65e1r24mlk' name='candy_data_pca.csv' table='[candy_data_pca#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='competitorname' ordinal='1' />
+                  <column datatype='integer' name='chocolate' ordinal='2' />
+                  <column datatype='integer' name='fruity' ordinal='3' />
+                  <column datatype='integer' name='caramel' ordinal='4' />
+                  <column datatype='integer' name='peanutyalmondy' ordinal='5' />
+                  <column datatype='integer' name='nougat' ordinal='6' />
+                  <column datatype='integer' name='crispedricewafer' ordinal='7' />
+                  <column datatype='integer' name='hard' ordinal='8' />
+                  <column datatype='integer' name='bar' ordinal='9' />
+                  <column datatype='integer' name='pluribus' ordinal='10' />
+                  <column datatype='real' name='sugarpercent' ordinal='11' />
+                  <column datatype='real' name='pricepercent' ordinal='12' />
+                  <column datatype='real' name='winpercent' ordinal='13' />
+                  <column datatype='real' name='X_pca' ordinal='14' />
+                  <column datatype='real' name='Y_pca' ordinal='15' />
+                  <column datatype='real' name='x_jitter' ordinal='16' />
+                  <column datatype='real' name='y_jitter' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Analaysis Chocolate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='candy_data_pca' name='federated.0yvw9va1en12y913b2kus1xaf90o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yvw9va1en12y913b2kus1xaf90o'>
+            <column auto-hidden='true' caption='Clusters' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:1]' parent-model='[AnalyticModel:{932ca0ab-9f48-48bb-ac0f-212d2e58b86f}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column caption='Competitorname' datatype='string' name='[competitorname]' role='dimension' type='nominal' />
+            <column-instance column='[AdhocCluster:1]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[competitorname]' derivation='None' name='[none:competitorname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[x_jitter]' derivation='None' name='[none:x_jitter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y_jitter]' derivation='None' name='[none:y_jitter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[winpercent]' derivation='Sum' name='[sum:winpercent:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[x_jitter]' derivation='Sum' name='[sum:x_jitter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y_jitter]' derivation='Sum' name='[sum:y_jitter:qk]' pivot='key' type='quantitative' />
+            <column caption='Winpercent' datatype='real' name='[winpercent]' role='measure' type='quantitative' />
+            <column datatype='real' name='[x_jitter]' role='measure' type='quantitative' />
+            <column datatype='real' name='[y_jitter]' role='measure' type='quantitative' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+                  <map to='#4e79a7'>
+                    <bucket>1</bucket>
+                  </map>
+                  <map to='#59a14f'>
+                    <bucket>5</bucket>
+                  </map>
+                  <map to='#76b7b2'>
+                    <bucket>4</bucket>
+                  </map>
+                  <map to='#e15759'>
+                    <bucket>3</bucket>
+                  </map>
+                  <map to='#f28e2b'>
+                    <bucket>2</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0yvw9va1en12y913b2kus1xaf90o].[sum:winpercent:qk]' included-values='in-range'>
+            <min>44.5</min>
+            <max>84.180289999999999</max>
+          </filter>
+          <slices>
+            <column>[federated.0yvw9va1en12y913b2kus1xaf90o].[sum:winpercent:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yvw9va1en12y913b2kus1xaf90o].[none:AdhocCluster:1:ok]' />
+              <text column='[federated.0yvw9va1en12y913b2kus1xaf90o].[none:competitorname:nk]' />
+              <lod column='[federated.0yvw9va1en12y913b2kus1xaf90o].[sum:winpercent:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yvw9va1en12y913b2kus1xaf90o].[none:y_jitter:qk]</rows>
+        <cols>[federated.0yvw9va1en12y913b2kus1xaf90o].[none:x_jitter:qk]</cols>
+      </table>
+      <simple-id uuid='{ED0CBDE7-9C34-4FE6-91EF-DBCC89DC4868}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Analaysis Chocolate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0yvw9va1en12y913b2kus1xaf90o].[sum:winpercent:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0yvw9va1en12y913b2kus1xaf90o].[none:AdhocCluster:1:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yvw9va1en12y913b2kus1xaf90o].[none:AdhocCluster:1:ok]</field>
+            <field>[federated.0yvw9va1en12y913b2kus1xaf90o].[none:competitorname:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2FF25C2D-1CB7-471C-B0CA-23927FDC9C0F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Analaysis Chocolate' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
